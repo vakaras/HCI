@@ -81,8 +81,6 @@
   Palyginkite naudotojo potyrių ir panaudojamumo tikslus.
   }{exam:question:13}
 
-  FIXME: Kas yra naudotojo potyrių tikslai?
-
   Panaudojamumo tikslai\cite[20--]{skaidres-5}:
   \begin{itemize}
     \item našumas:
@@ -109,6 +107,28 @@
     \item naudingumas;
     \item išmokstamumas;
     \item lengvas atsimenamumas.
+  \end{itemize}
+
+  \begin{defn}[Naudotojų potyrių projektavimas]
+    Žmogaus ir kompiuterio sąveikos dalis, akcentuojanti produkto naudotojo
+    patiriamus pojūčius.
+    \cite[3]{skaidres-7}
+  \end{defn}
+
+  \begin{defn}[Naudotojo potyriai]
+    Asmens pojūčiai ir reakcijos, sukelti naudojant arba numatant naudoti
+    produktą, sistemą arba paslaugą.\cite[4]{skaidres-7}
+  \end{defn}
+
+  Naudotojo potyrių tikslai\cite[3]{skaidres-7}:
+  \begin{itemize}
+    \item malonumas;
+    \item smagumas;
+    \item linksmumas;
+    \item patrauklumas;
+    \item estetinis patrauklumas;
+    \item parama kūrybiškumui;
+    \item pasitenkinimas.
   \end{itemize}
 \end{question}
 
@@ -192,17 +212,131 @@
   Žr.: \cite[47--]{skaidres-6}
 \end{question}
 
+
 \begin{question}{%
   Paaiškinkite Gareto naudotojo potyrių projektavimo sluoksnius.
   }{exam:question:17}
-  <++>
+  
+  \begin{itemize}
+    \item \emph{Paviršius:} Paviršiaus sluoksnis apibrėžia galutinį
+      dizainą.
+    \item \emph{Karkasas:} Karkaso sluoksnis apibrėžia ekrano išdėstymą
+      ir funkcines lango dalis.
+    \item \emph{Struktūra:} Struktūros apibrėžia naudotojo judėjimo
+      takus arba navigaciją.
+    \item \emph{Apimtis:} Kompiuterizuojamos naudotojo užduotys.
+    \item \emph{Strategija:} Strategiją formuoja verslo tikslai, naudotojų
+      rolės ir kontekstas.
+  \end{itemize}
+  Žr.: \cite[9-14]{skaidres-7}.
 \end{question}
 
 \begin{question}{%
   Kaip naudotojui palankus projektavimas vykdomas stambiuose projektuose?
   Pateikite atitinkamų metodikų pavyzdžius.
   }{exam:question:18}
-  <++>
+
+  Naudotojui palankių projektavimo metodikų esmė yra kuo ankstyvesniame
+  etape įtraukti naudotoją į projektavimo procesą. Naudotojų analizė,
+  atlikta ankstyvuosiuose projekto etapuose ženkliai sumažina projektavimo
+  laiką ir išlaidas. Tokias sistemas lengviau išmokti, naudoti ir
+  prižiūrėti. Programų sistemų metodikos efektyviai remia techninę
+  projekto dalį, tačiau jose ne visada yra apibrėžti naudotojo ir jų
+  porekių analizės metodai, o kartu ir praktiškų naudotojo sąsajų
+  kūrimo procedūros.\cite[165p.]{konspektas}
+
+  IBM „Easy of Use“ etapai:
+  \begin{enumerate}
+    \item verslo strategija:
+      \begin{itemize}
+        \item naudotojų patirties analitikas atlieka pradinį naudotojų
+          inžinerijos planavimą;
+        \item rinkos planuotojas atlieka verslo ir rinkos reikalavimų
+          kūrimą;
+      \end{itemize}
+    \item naudotojų poreikių analizė:
+      TODO \cite[39]{skaidres-7}
+    \item eskizinis projektavimas:
+      TODO \cite[40]{skaidres-7}
+    \item detalusis projektavimas:
+      TODO \cite[41]{skaidres-7}
+    \item diegimas:
+      TODO \cite[42]{skaidres-7}
+  \end{enumerate}
+
+  Loginės naudotojui palankios interaktyvios projektavimo metodikos
+  \en{Logical user-centred interactive design methodology}, sutrumpintai
+  LUCID etapai:
+  \begin{enumerate}
+    \item vizija:
+      \begin{itemize}
+        \item su visais suinteresuotais asmenimis suderinti bendrą
+          aiškią gaminio viziją, išreikštą eskizu;
+        \item numatyti potencialias problemas, galinčias sutrukdyti
+          kūrimo komandos bendrą veiklą;
+      \end{itemize}
+    \item naudotojo analizė:
+      \begin{itemize}
+        \item naudotojų ir užduočių charakteristikos;
+        \item kuriami naudotojo mąstymo modeliai;
+        \item renkama naudotojų terminija;
+        \item surinkti duomenys analizuojami;
+        \item panaudojamumo tikslai;
+      \end{itemize}
+    \item eskizinis projektas:
+      \begin{itemize}
+        \item koncepcinis projektas;
+        \item ekraninis prototipas;
+        \item panaudojamumo testavimas;
+        \item ekraninio prototipo tobulinimas;
+        \item testavimas ir tobulinimas;
+      \end{itemize}
+    \item detalusis projektas:
+      TODO \cite[48]{skaidres-7}
+    \item realizacija:
+      \begin{itemize}
+        \item konsultuoti programuotoją ir, jei reikia, keisti langų
+          projektą;
+        \item vertinti svarbesnių sąsajos dalių panaudojamumą;
+        \item remti programavimo procesą, konsultuojant ir įnešant
+          pakeitimus;
+      \end{itemize}
+    \item išleidimas:
+      \begin{itemize}
+        \item planuojama gaminio priežiūra;
+        \item galutiniai panaudojamumo testavimai naudotojo aplinkoje;
+        \item matuoti naudotojų panaudojamumo tikslų pasiekimą;
+        \item dokumentuojama projekto metu sukaupta patirtis.
+      \end{itemize}
+  \end{enumerate}
+
+  Etnografija yra antropologijos šaka, nagrinėjanti ir moksliškai
+  aprašinėjanti žmonių bendruomenių kultūras.
+
+  Etnografinių stebėjimų etapai:
+  \begin{itemize}
+    \item pasiruošimas:
+      TODO: \cite[52]{skaidres-7}
+    \item tyrinėjimas vietoje:
+      TODO: \cite[52]{skaidres-7}
+    \item analizė:
+      TODO: \cite[53]{skaidres-7}
+    \item ataskaitų rengimas:
+      TODO: \cite[53]{skaidres-7}
+  \end{itemize}
+  Etnografiniai stebėjimai iš esmės svarbūs tuo, kad remiasi etnografų
+  sukurta ir per ilgą laiką patikrinta stebėjimo metodika, dėl kurios
+  naudojimo sumažėja tikimybė susimauti.
+
+  Projektavimas kartu \en{Participatory Design}:
+  TODO: \cite[55--56]{skaidres-7}
+
+  Senarijų kūrimas. TODO: \cite[57]{skaidres-7}
+
+  Socialinio poveikio ataskaita ankstyvai projektavimo apžvalgai.
+  TODO: \cite[58]{skaidres-7}
+
+  Žr.: \cite[36--]{skaidres-7} ir \cite[165--]{konspektas}.
 \end{question}
 
 \begin{question}{%
