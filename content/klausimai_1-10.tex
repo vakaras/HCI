@@ -147,34 +147,34 @@
     \item[Pasitenkinimas] – tai sistemos naudojimo patogumas ir
       priimtinumas.
   \end{description}
-  <++>
+  Žr.: \cite[46p.]{konspektas} ir \cite[7]{skaidres-4}.
 \end{question}
 
 \begin{question}{%
   Išvardinkite standartinius panaudojamumo tikslus gaminio gyvavimo ciklo
   etapams.
   }{exam:question:07}
-  \begin{enumerate}
-    \item \emph{Efektyvumas} nurodo, kaip gerai sistema  atlieka tai,
-      kam ji skirta. Šis tikslas nusako, ar sistema suteikia
-      naudotojams galimybes išmokti ją  naudoti ir pasiekti reikiamų
-      rezultatų.
-    \item \emph{Našumas} nurodo naudotojo veiklų rėmimo būdą.
-      Teigiamas našumo pavyzdys: elektroninės komercijos tinklapiuose
-      vieną kartą įvesti asmininiai duomenys perkant vieną prekę,
-      kitame pirkime toje pačioje įmonėje duomenys bus nurodomi
-      automatiškai.
-    \item \emph{Saugumas} reiškia, kad naudotojas yra apsaugotas
-      rizikingose ir nepageidaujamose situacijose. Pavyzdžiui, rentgeno
-      aparato operatorius vykdo operacijas už sienos.
-    \item \emph{Naudingumas} Ar sistema suteikia visas reikalingas
-      priemones atlikti užduotį? Pavyzdys – galingos buhalterinės
-      sistemos. Mažos naudos pavyzdys – piešimo priemonė, kurioje
-      nėra galimybės nupiešti laisvą liniją.
-    \item \emph{Išmokstamumas}
-    \item \emph{Lengvas atsimenamumas}
-  \end{enumerate}
-  <++>
+  FIXME: Normaliai suformuluoti.
+  \begin{itemize}
+    \item \emph{Poreikių įvertinimas:} esminių sistemos savybių
+      demonstravimas.
+    \item \emph{Pirkimas:} patogus pasirinkimas ir greitas pirkimas.
+    \item \emph{Diegimas:} kuo trumpesnis ir sėkmingesnis.
+    \item \emph{Apmokymas:} nesudėtingas, mokymo medžiaga lengvai prieinama
+      ir atitinkanti programą.
+    \item \emph{Ribotas naudojimas:} naudotojai yra paliekami savarankiškam
+      darbui, yra tikimasi, kad jie savo užduotis atliks lengviau,
+      patogiau ir greičiau.
+    \item \emph{Pilnas naudojimas:} išnaudojamos visos sistemos galimybės,
+      yra svarbu, kad būtų nesunku pašinti iki tol nenaudotas funkcines
+      galimybes.
+    \item \emph{Pasiekiamos gaminio ribos:} kai naudotojai jau pilnai
+      išnaudoja sistemą ir jų darbo pobūdis pradeda keistis, jie
+      pradeda jausti esamos sistemos ribas.
+    \item \emph{Įvertinimas:} remiantis, sukaupta patirtimi iš naujo
+      įvertinami poreikiai.
+  \end{itemize}
+  Žr.: \cite[47--49]{konspektas} ir \cite[6]{skaidres-4}.
 \end{question}
 
 \begin{question}{%
@@ -182,68 +182,91 @@
   Principų tinkamo projektavimo ir pažeidimo pavyzdžiai. (Pakanka
   tekstinių aprašų.)
   }{exam:question:08}
-  Panaudojamumo principai:
+  Panaudojamumo principai pagal Dix.
   \begin{enumerate}
-    \item Išmokstamumas (learnability)
+    \item Išmokstamumas \en{learnability} – kaip lengvai naujokai gali
+      išmokti efektyviai naudotis sistema.
       \begin{itemize}
-        \item Nuspėjamumas (predictability)
-        \item Sintezavimas (synthesizability)
-        \item Atpažįstamumas (familiarity)
-        \item Apibendrinimas (generalizability)
-        \item Darna (consistency)
+        \item Nuspėjamumas \en{predictability}:
           \begin{itemize}
-            \item Vienoje sistemoje
-            \item Platformoje
-            \item Darbo aplinkoje
-            \item Metaforose
+            \item veiksmo rezultatų numatymas;
+            \item operacijų matomumas.
+          \end{itemize}
+          Pavyzdžiui, tą patį veiksmą aliekantį mygtuką galima
+          pavadinti „Gerai“ ir „Siųsti duomenis“.
+        \item Sintezavimas \en{synthesizability}:
+          \begin{itemize}
+            \item gebėjimas įvertinti buvusių veiksmų poveikį esamai
+              būsenai;
+            \item kiekvieno veiksmo efekto matomumas;
+            \item nuoseklus atsakas.
+          \end{itemize}
+          Pavyzdžiui, grafinėje sąsajoje pertempus failą iš vieno katalogo
+          į kitą, mes iš karto tai matome. (Skirtingai nuo komandinės
+          eilutės, kur papildomai dar reikia peržiūrėti katalogo turinį.)
+          Sintezavimas nuo nuspėjamumo skiriasi tuo, kad nuspėjamumas
+          akcentuoja asmens gebėjimą nuspėti veiksmo rezultatą, kai
+          sintezavimas yra naudotojo gebėjimas įvertinti buvusių veiksmų
+          poveikį esamai sistemos būsenai.
+        \item Atpažįstamumas \en{familiarity}: santykis tarp
+          \begin{itemize}
+            \item naudotojo esamų žinių ir
+            \item žinių, reikalingų efektyviam sistemos naudojimui.
+          \end{itemize}
+        \item Apibendrinimas \en{generalizability}: pavyzdžiui,
+          daugumoje programų kartojasi meniu „Failas“ ir „Keisti“.
+        \item Darna \en{consistency}:
+          \begin{itemize}
+            \item vienoje sistemoje – panašūs veiksmai įvairiose sistemos
+              vietose atliekami vienodai;
+            \item platformoje;
+            \item darbo aplinkoje – atitikimas platformos (operacinės
+              sistemos) stiliui, žinios gautos naudojant kitas tos
+              OS programas turi būti pritaikomos ir naujajai;
+            \item metaforose – veiksmai su virtualiais objektais
+              neturi prieštarauti realiame pasaulyje vykdomiems veiksmams.
           \end{itemize}
       \end{itemize}
-    \item Lankstumas (flexibility)
+    \item Lankstumas \en{flexibility} – naudotojo ir sistemos apsikeitimo
+      informacija būdų įvairovė. (Užduoties atlikimo būdų įvairovė.)
       \begin{itemize}
-        \item Dialogo iniciatyva (dialogue initiative)
-        \item Daugiagijiškumas (Multithreading)
-        \item Užduočių perkėliamumas (task migrability)
-        \item Pakeičiamumas (substitutivity)
-        \item Pritaikomumas (customizability)
+        \item Dialogo iniciatyva \en{dialogue initiative} – produktas
+          nevaržo naudotojo pasirenkant įvestį. (Orientuota į
+          tai, kad dialogą inicijuoja naudotojas, o ne sistema.)
+        \item Daugiagijiškumas \en{Multithreading} – sistemos gebėjimas
+          remti naudotojo sąveiką su keliomis lygiagrečiai vykdomomis
+          užduotimis. Gali būti:
+          \begin{description}
+            \item[susikertantis \en{concurrent}] – viena įvestis tinka
+              kelioms užduotims;
+            \item[lygiagretus \en{interleaving}] – viena įvestis konkrečiai
+              užduočiai.
+          \end{description}
+        \item Užduočių perkėliamumas \en{task migrability} – galimybė
+          perduoti užduoties valdymą sistemai. Pavyzdžiui, gramatikos
+          tikrinimas ir autopilotas.
+        \item Pakeičiamumas \en{substitutivity}:
+          \begin{itemize}
+            \item matai (coliai, centimetrai, metrai ir t.t.);
+            \item įvesties ir išvesties alternatyvos;
+            \item leidimas keisti užduoties formulavimo ar rodymo būdą.
+          \end{itemize}
+        \item Pritaikomumas \en{customizability} – individualizavimas.
       \end{itemize}
-    \item Robastiškumas
+    \item Robastiškumas \en{robustness} – naudotojo rėmimo laipsnis,
+      nustatant sėkmingą sistemos naudojimą ir tikslų įvertinimą.
       \begin{itemize}
-        \item Matomumas (observability)
-        \item Atstatomumas (recoverability)
-        \item Sistemos atsakas (responsivness)
-        \item Užduočių atlikimas (task conformance)
+        \item Matomumas \en{observability} – gebėjimas iš vaizdo įvertinti
+          sistemos būseną.
+        \item Atstatomumas \en{recoverability} – galimybė ištaisyti
+          klaidą.
+        \item Sistemos atsakas \en{responsivness}.
+        \item Užduočių atitikimas realioms veikloms \en{task conformance}:
+          \begin{itemize}
+            \item pavadinimai ir veiksmų eiliškumas;
+            \item matavimo kriterijai.
+          \end{itemize}
       \end{itemize}
   \end{enumerate}
-  
-  Aprašymai pagal fantaziją. Pavyzdžiui, netinkamas pateikimas –
-  durys, kai neaišku stumti ar traukti, kur stumti… Geras pavyzdys –
-  mygtukas, aiškus interaktyvus objektas.
-  
-  <++>
-\end{question}
-
-\begin{question}{%
-  Sėkmingo produkto savybės.
-  }{exam:question:09}
-  \begin{itemize}
-    \item Patrauklumas.
-    \item Įgyvendinamumas.
-    \item Veiksnumas.
-  \end{itemize}
-  <++>
-\end{question}
-
-\begin{question}{%
-  Tikslinio projektavimo etapai.
-  }{exam:question:10}
-  \begin{enumerate}
-    \item \emph{Analizė} naudotojai, dalykinė sritis.
-    \item \emph{Modeliavimas} personos, veiklų srautai, artefaktai.
-    \item \emph{Reikalavimai} naudotojų, verslo, techniniai poreikiai.
-    \item \emph{Eskizai} sąveikos struktūra ir veiklų srautai.
-    \item \emph{Detalieji prototipai} sąsaj̇ų detalizavimas, turinio
-      išbaigimas.
-    \item \emph{Parama} realizacijos parama ir priežiūra.
-  \end{enumerate}
-  <++>
+  Žr.: \cite[59--64]{konspektas} ir \cite[11--40]{skaidres-4}.
 \end{question}
