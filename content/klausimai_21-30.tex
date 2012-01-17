@@ -8,7 +8,33 @@
   \end{itemize}
   Argumentuokite savo pasirinkimą.
   }{exam:question:21}
+
   <++>
+
+  Pažintinė peržvalga\cite[13]{skaidres-9}:
+  \begin{itemize}
+    \item tikslus užduočių loginių žingsnių tikrinimas;
+    \item naudojama projekto pradžioje, kai atsiranda eskizinis (paprastai
+      popierinis) sąsajos maketas;
+    \item paremta solidžia pažintinės psichologijos teorija.
+  \end{itemize}
+  Ji taikoma\cite[56]{skaidres-9}:
+  \begin{itemize}
+    \item eskiziniams ir detaliesiems maketams;
+    \item sudėtingesnėms esminėms užduotims;
+    \item riboto naudojimo etapo efektyvumo tikslams vertinti.
+  \end{itemize}
+  
+  Ekspertų tikrinimai\cite[9]{skaidres-8}:
+  \begin{itemize}
+    \item paremti pažintinės psichologijos modeliais arba projektavimo
+      euristikomis;
+    \item leidžia vertinti idėjas nuo projekto pradžios;
+    \item nebūtinas detalusis maketas (taupomas laikas, skirtas maketui
+      kurti);
+    \item nereikia planuoti ir vykdyti eksperimento (testavimo);
+    \item vykdomi panaudojamumo vertintojų ar sąsajos architektų.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
@@ -21,7 +47,17 @@
   \end{itemize}
   Argumentuokite savo pasirinkimą.
   }{exam:question:22}
-  <++>
+
+  Turint interaktyvų prototipą galima efektyviai vykdyti testavimą
+  su naudotojais. Jį ir reikėtų rinktis, nes jis, kitaip nei 
+  euristinis tikrinimas ar pažintinė peržvalga, leidžia patikrinti
+  ar kūrėjai teisingai supranta būsimų naudotojų poreikius.
+
+  Panaudojamumo testavimu yra vertinamas\cite[8]{skaidres-8}:
+  \begin{itemize}
+    \item sąsajos bandomasis pavyzdys (pakankamai detalus maketas) arba
+    \item veikianti programų sistema.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
@@ -36,18 +72,60 @@
   (Pasirinkite visus tinkančius atsakymus.)
   }{exam:question:23}
   <++>
+  Taip:
+  \begin{itemize}
+    \item testavime.
+    \item pažintinėje peržvalgoje – vertinamas sistemos efektyvumas riboto
+      naudojimo etape.
+  \end{itemize}
+
+  Ne:
+  \begin{itemize}
+    \item KLM metode – juo yra bandoma įvertinti patyrusio naudotojo
+      užduočių atlikimo greitį.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
   Paaiškinkite GOMS ir KLM santykį.
   }{exam:question:24}
-  <++>
+  
+  GOMS modelis\cite[14]{skaidres-8}:
+  \begin{itemize}
+    \item \emph{goals} – aukšto lygmens naudotojo tikslai;
+    \item \emph{operators} – veiksmai tikslui pasiekti;
+    \item \emph{methods} – tikslo pasiekimo procedūra;
+    \item \emph{selection rules} – procedūros pasirinkimo taisyklės.
+  \end{itemize}
+  Naudojant GOMS modelį yra identifikuojamos veiksmų sekos
+  \cite[15]{skaidres-8}. Iš principo vietoj GOMS aprašo gali būti
+  naudojamas eskizinis maketas arba hierarchinės užduočių analizės
+  aprašas (bet tuo atveju jis turi būti detalizuotas iki primityvių
+  veiksmų).
+
+  KLM (Keystroke-Level Model) leidžia prognozuoti užduoties atliekamos
+  be klaidų įvykdymo laiką. 
+
+  Veiksmų analizės tikslas yra numatyti patyrusio naudotojo veiklos
+  našumą. GOMS yra būdas dekomponuoti užduotį iki elementarių veiksmų,
+  o tada su KLM galime apskaičiuoti užduoties įvykdymo laiką esant
+  prielaidoms\cite[40]{skaidres-8}:
+  \begin{itemize}
+    \item naudotojas moka atlikti užduotį;
+    \item naudotojas atlieka užduotį be klaidų.
+  \end{itemize}
+  Tokiu būdu galime įvertinti užduočių atlikimo našumą:
+  \begin{itemize}
+    \item riboto naudojimo etapui – naudotojas nežino arba nenaudoja
+      santrumpų;
+    \item pilno naudojimo etapui – našiausio scenarijaus trukmė.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
   Kas yra ir kokio naudotojo tipo veikimą tikrina veiksmų analizės metodai?
   }{exam:question:25}
-  <++>
+  Žr.: \ref{exam:question:24}.
 \end{question}
 
 \begin{question}{%
@@ -64,18 +142,86 @@
   ?
   }{exam:question:26}
   <++>
+  Modeliniai vertinimai: nuo \cite[42]{skaidres-8}.
+
+  Pažintinė peržvalga:
+  \begin{itemize}
+    \item paskirtis: įvertinti riboto naudojimo užduočių atlikimo
+      efektyvumą (santykį informacijos, kurios reikia užduoties
+      atlikimui, su informacija kuri yra pateikiama sąsajos);
+    \item tikslinga vykdyti: projekto pradžioje, kai turima tik eskizinį
+      (paprastai popierinį) sąsajos maketą;
+    \item vertinimo dalyviai: panaudojamumo ekspertai, kartais gali būti
+      ir programuotojai;
+    \item vertinimo įvestis:
+      \begin{itemize}
+        \item naudotojų ir užduočių charakteristikos;
+        \item konkrečių naudojimo scenarijų aibė;
+        \item sąsajos maketas – turi būti matomas langų išdėstymas ir
+          aiški veiksmų tvarka;
+      \end{itemize}
+    \item rezultatas: pažintinio apėjimo ataskaita ir iš jos gautas
+      defektų sąrašas.
+  \end{itemize}
+
+  Testavimas su naudotojais:
+  \begin{itemize}
+    \item paskirtis:
+    \item tikslinga vykdyti:
+    \item vertinimo dalyviai: būsimi naudotojai;
+    \item reikia paruošti: užduotis, sutikimus, klausimynus, įrašymo
+      įrangą \cite[13]{skaidres-10};
+    \item vertinimo rezultatas: ataskaita\cite[27--29]{skaidres-10}
+  \end{itemize}
+
+  Euristinis tikrinimas\cite{skaidres-11}:
+  \begin{itemize}
+    \item paskirtinis:
+    \item tikslinga vykdyti:
+    \item vertinimo dalyviai: ekspertai (specialistai geriau suprantantys
+      naudotojus, nei programuotojai);
+    \item reikia paruošti: 
+    \item vertinimo rezultatas:
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
   Ką teigia Fito dėsnis? (Paaiškinkite esmę, formulės pateikti nereikia.)
   }{exam:question:27}
-  <++>
+
+  \en{Fitt's Law}
+
+  Kuo didesnis yra objekto ir kursoriaus atstumas arba kuo mažesnis
+  yra objekto dydis, tuo naudotojui reikia daugiau laiko, kad jį
+  pažymėtų.
+
+  \begin{equation*}
+    \t{Laikas (ms)} = a + b \log_2 \left( \frac{D}{S} + 1 \right),
+  \end{equation*}
+  čia:
+  \begin{description}
+    \item[$D$] – atstumas nuo pelės iki objekto;
+    \item[$S$] – objekto plotis.
+  \end{description}
+
+  Žr.: \cite[48]{skaidres-8}.
 \end{question}
 
 \begin{question}{%
   Ką teigia Hiko dėsnis? (Paaiškinkite esmę, formulės pateikti nereikia.)
   }{exam:question:28}
-  <++>
+
+  \en{Hick's Law}
+
+  Kuo didesnis vieno tipo pasirinkimų skaičius, tuo daugiau laiko
+  reikia pasirinkimui.
+
+  \begin{equation*}
+    \t{Laikas (ms)} = k \log_2 \left( n + 1 \right),
+  \end{equation*}
+  čia $k \approx 150$ ms.
+
+  Žr.: \cite[51]{skaidres-8}
 \end{question}
 
 \begin{question}{%
