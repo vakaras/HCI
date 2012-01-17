@@ -65,32 +65,150 @@
 \begin{question}{%
   Kas yra informacijos architektūra?
   }{exam:question:34}
-  <++>
+
+  Informacijos architektūra\cite[11]{skaidres-14} – programų sistemų
+  ar svetainių struktūros ir funkcinių galimybių organizavimas, siekiant
+  palengvinti intuityvią paiešką.
+
+  \begin{enumerate}
+    \item Bendrų informacinių aplinkų struktūrinis projektavimas.
+    \item Organizavimo, ženklinimo, paieškos ir navigacijos sistemų
+      integravimas.
+    \item Panaudojamų ir lengvai paieškomų informacinių produktų
+      ir patirčių formavimas.
+    \item Metodika, skirta pateikti projektavimo ir architektūros
+      principus.
+  \end{enumerate}
+  Žr.: \cite[8]{skaidres-14}.
+
+  Kas nėra informacijos architektūra\cite[12]{skaidres-14}:
+  \begin{itemize}
+    \item grafinis dizainas;
+    \item programinės įrangos kūrimas;
+    \item panaudojamumo inžinerija.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
   Informacijos architektūros projektavimo stiliai.
   }{exam:question:35}
-  <++>
+
+  Iš viršaus į apačią – prieš apibrėžiant svetainės struktūrą formuluojama:
+  \begin{enumerate}
+    \item verslo strategija;
+    \item naudotojų tikslai;
+    \item aukšto lygio svetainės struktūra.
+  \end{enumerate}
+  Projektuojant šiuo būdu yra siekiama pateikti atsakymus į naudotojui
+  rūpimus klausimus:
+  \begin{itemize}
+    \item kur aš esu?
+    \item kaip susirasti tai ko noriu?
+    \item kaip naviguoti svetainėje?
+    \item kas svarbaus / unikalaus šioje organizacijoje?
+    \item kas čia vyksta?
+    \item kokia informacija prieinama šioje svetainėje?
+    \item kaip galima susisiekti su svetainės šeimininkais?
+  \end{itemize}
+
+  Iš apačios į viršų:
+  \begin{enumerate}
+    \item konkrečių turinio ryšių projektavimas, realizuojant konkrečius
+      informacijos paieškos scenarijus;
+    \item aukštesnio lygio hierarchijos formavimas.
+  \end{enumerate}
+  Architektūra iš apačios aukštyn dažniausiai pasireiškia per patį
+  turinį, tai yra jo struktūrą ir išdėstymą. Žymės, rikiavimas ir
+  struktūra atsako naudotojui į šiuos klausimus:
+  \begin{itemize}
+    \item kur aš esu?
+    \item kas čia yra?
+    \item kur dar iš čia galiu nukakti?
+  \end{itemize}
+  Naudotojai dažnai praleidžia iš viršaus į apačią IA, kadangi iš
+  apačios į viršų IA yra intuityvesnė.
+
+  Žr.: \cite[23]{skaidres-14}
 \end{question}
 
 \begin{question}{%
   Gestalt principai.
   }{exam:question:36}
-  <++>
+  \begin{itemize}
+    \item Artumas \en{proximity}.
+    \item Tolydumas \en{continuity}.
+    \item Visumos dalis \en{part-whole}.
+    \item Panašumas \en{similarity}.
+    \item Užbaigtumas \en{closure} ir pratęsimas.
+    \item Paprastumas.
+    \item Simetrija.
+    \item Lygiagretumas.
+  \end{itemize}
 \end{question}
 
 \begin{question}{%
   Ką akcentuoja harmoninga žmogaus ir kompiuterio sąveika?
   }{exam:question:37}
-  <++>
+  
+  Žmogus dirbdamas turi būti tėkmės būsenoje \cite[5]{skaidres-15}.
+  Jos savybės:
+  \begin{itemize}
+    \item laiko ir aplinkos pojūčių netekimas;
+    \item visiška koncentracija ties veiklos tikslu;
+    \item gilaus susimąstymo ir meditacijos būsena.
+  \end{itemize}
+  Rezultatai:
+  \begin{itemize}
+    \item ekstremalus produktyvumas;
+    \item pasitenkinimas.
+  \end{itemize}
+  Pasiekiama naudojant permatomą sąsają:
+  \begin{itemize}
+    \item dingsta riba tarp programos ir naudotojo;
+    \item visi objektai nukreipti vienam tikslui pasiekti.
+  \end{itemize}
+
 \end{question}
 
 \begin{question}{%
   Išvardinkite ir paaiškinkite bent septynis harmoningos sąveikos
   principus.
   }{exam:question:38}
-  <++>
+  \begin{itemize}
+    \item Mažiau yra daugiau – pavyzdžiui, Google paieška prie senąsias
+      paieškos sistemas.
+    \item Leisti naudotojui dirbti, neklausinėti – „nemėtyti“ nereikalingų
+      langų.
+    \item Įrankiai po ranka – reikiami įrankiai lengvai randami,
+      dizainas nėra perkrautas.
+    \item Tinkamas atsakas \en{feedback} – paprasta ir lengvai prieinama
+      būsenos informacija. (Pavyzdys su „Word Count“ „MS Word 2007“
+      programoje.)
+    \item Tikėtina – galima. Pavyzdžiui, programuotojo logika:
+      \begin{equation*}
+        \underbrace{1 \land 1 \land \cdots \land 1}_{1000} \land 0 = 0.
+      \end{equation*}
+      Realiai, kiek dažnai neišsaugome atliktų pakeitimų?
+    \item Suprantama informacija: skritulinės diagramos vietoj skaičių
+      nurodant kietojo disko vietos panaudojimą.
+    \item Įvesti pasirenkant – pavyzdžiui, leisti pasirinkti vieną iš
+      standartinių paraščių variantų, vietoj to, kad kiekvieną kartą
+      liepti juos nurodyti.
+    \item Pateikti objektų ir programos būseną.
+    \item Vengti nereikalingų pranešimų – pavyzdžiui, kai spausdintuvas
+      spausdina nederėtų rodyti jo kasečių būsenos, ypač jei jos yra
+      beveik pilnos, nes naudotojas gali priprasti ignoruoti tą
+      pranešimą ir nepastebės, kai tai bus svarbu.
+    \item Vengti tuščių vietų.
+    \item Skirti komandas ir konfigūravimą.
+    \item Leisti pasirinkimus.
+    \item Paslėpti „katapultas“ – nederėtų įtaisyti katapultavimosi mygtuko
+      šalia radijo ir kabinos apšvietimo, nes tada jį gali nuspausti
+      tiesiog netyčia… Visgi jis turėtų būti pasiekiamas, kai jo reikia.
+    \item Optimizuoti atsakus – sistema turi sureaguoti į naudotojo
+      veiksmus per kuo mažesnį laiko tarpą.
+  \end{itemize}
+  Žr.: \cite[6--21]{skaidres-15}
 \end{question}
 
 \begin{question}{%
@@ -98,10 +216,37 @@
   orientacija?
   }{exam:question:39}
   <++>
+  FIXME: Virtualiųjų pasaulių? Darbastalio\cite[38]{skaidres-15}, 3D
+  aplinkose?
 \end{question}
 
 \begin{question}{%
   Išvardinkite tipinius duomenų vizualizavimo būdus ir užduotis.
   }{exam:question:40}
-  <++>
+
+  FIXME: Kokie yra tipiniai vizualizavimo būdai?
+  Gal: \cite[50--64]{skaidres-15}
+
+  Informacijos tipai\cite[49]{skaidres-15}:
+  \begin{enumerate}
+    \item vienmatė;
+    \item dvimatė;
+    \item trimatė;
+    \item daugiamatė;
+    \item laikinė;
+    \item hierarchinė;
+    \item tinklinė.
+  \end{enumerate}
+
+  Užduotys\cite[49]{skaidres-15}:
+  \begin{itemize}
+    \item peržvelgti;
+    \item priartinti;
+    \item filtruoti;
+    \item pateikti detales;
+    \item parodyti santykį;
+    \item rodyti retrospektyvą;
+    \item išrinkti.
+  \end{itemize}
+
 \end{question}
